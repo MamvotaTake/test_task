@@ -1,0 +1,371 @@
+/* =============================================
+     Default Theme
+     -------------------------------------------
+     Fonts: IBM Plex Sans,sans-serif
+
+     --------------------------------------------
+     Colors:
+          Grey:                        #212226
+          white Smoke:                 #f4f4f4
+          white:                       #ffffff
+================================================*/
+
+/*================================================
+            Declaration of variables
+=================================================*/
+
+:root {
+    --grey: #212226;
+    --white-smoke: #f4f4f4f4;
+    --white: #ffffff;
+    --font-family: "IBM Plex Sans", 'sans-serif';
+    --header-photo: url('https://thumbs.dreamstime.com/b/corporate-office-buildings-city-sydney-30479376.jpg');
+}
+
+/*================================================
+                    Html. Body
+=================================================*/
+
+html, body {
+    height: 100%;
+    font-family: var(--font-family);
+
+}
+
+h1,p {
+    font-family: var(--font-family);
+    font-size: 300
+    
+}
+
+/*================================================
+                    Header
+=================================================*/
+
+header {
+    background-image: var(--header-photo);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    color: var(--white);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 0;
+    position: relative;
+}
+
+header::after {
+    content: " ";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+
+}
+
+header * {
+    z-index: 1;
+}
+
+header h1 {
+    text-transform: capitalize;
+    margin: 0 0 30px;
+}
+
+/*================================================
+                    Content Boxes
+=================================================*/
+.content-box-lg {
+    padding: 70px 0;
+}
+
+.content-box-md {
+    padding: 100px 0;
+}
+
+.content-box-sm {
+    padding: 90px 0;
+}
+
+/*================================================
+                    Social icons
+=================================================*/
+ul.social-list {
+    padding: 0;
+    margin-top: 20px;
+}
+
+ul.social-list li {
+    display: inline-block;
+    padding: 0;
+}
+
+ul.social-list li a {
+    border:  1px solid #ffffff;
+    width: 35px;
+    height: 35px;
+    display: inline-block;
+    line-height: 35px;
+    color: #ffffff;
+    border-radius:50%;
+    -webkit-border-radius:50%;
+    transition: all 400ms linear;
+    -webkit-transition: all 400ms linear;
+    
+}
+
+ul.social-list li:nth-child(1) a:hover {
+    background-color:#3b5998;
+    border-color: transparent;
+}
+
+ul.social-list li:nth-child(2) a:hover {
+    background-color:#00aced;
+    border-color: transparent;
+}
+
+ul.social-list li:nth-child(3) a:hover {
+    background-color:#0077B5;
+    border-color: transparent;
+}
+
+ul.social-list li:nth-child(4) a:hover {
+    background-color:#E1306C;
+    border-color: transparent;
+}
+
+
+/* ================================================
+                    Navigation
+=================================================*/
+/* .navbar {
+    background-color:var(--grey);
+}
+
+ul.navbar-nav > li > a {
+    font-family: var(--font-family);
+    color: #fff;
+    margin-left: 55px;
+}
+
+ul.navbar-nav > li > a:hover,
+ul.navbar-nav > li > a:focus {
+     background-color: none;
+     color: #bbb;
+} */
+
+/*================================================
+                    Radio Buttons
+=================================================*/
+.radio {
+    position: relative;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.form-check {
+    font-family: var(--font-family);
+    color: #212226;
+    font-size:18px;
+    overflow: hidden;
+    
+    
+}
+
+/*================================================
+                    Buttons
+=================================================*/
+span {
+    
+    margin-top: 4px;
+    margin-left: -24px;
+}
+
+span .cancel-btn{
+    height:10%;
+    background-color: #8d56fd;
+    color: white;
+    padding: 6px;
+    z-index: -1;
+    overflow: hidden;
+    text-align: center;
+}
+button {
+    cursor: pointer;
+}
+
+button:active {
+    transform: scale(0.95);
+    -webkit-transform: scale(0.95);
+    -moz-transform: scale(0.95);
+    -ms-transform: scale(0.95);
+    -o-transform: scale(0.95);
+}
+
+.btn {
+    background-color: #8d56fd;
+    border: 0;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    color: var(--white);
+    padding: 4px 10px;
+    outline: none;
+}
+
+
+.centered button {
+    transform: scale(1.3);
+    -webkit-transform: scale(1.3);
+    -moz-transform: scale(1.3);
+    -ms-transform: scale(1.3);
+    -o-transform: scale(1.3);
+    margin: 15px;
+}
+/*================================================
+                    Footer
+=================================================*/
+footer {
+    background-color: var(--grey);
+    color: var(--white);
+    height: 70px;
+}
+
+footer p {
+    font-family: "IBM Plex Sans", 'sans-serif';
+    font-weight:bold;
+    margin-top: -50px;
+    text-align: center;
+    color: #bbb;
+    
+}
+
+
+
+/*================================================
+                    Tree View
+=================================================*/
+/* Remove default bullets */
+ul, #myUL {
+    list-style-type: none;
+  }
+  
+  /* Remove margins and padding from the parent ul */
+  #myUL {
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Style the caret/arrow */
+  .caret {
+    cursor: pointer;
+    user-select: none; /* Prevent text selection */
+    font-weight: bold;
+    font-size:400;
+    text-align: center;
+    width: 100%;
+  }
+  
+  /* Create the caret/arrow with a unicode, and style it */
+  .caret::before {
+    content: "\25B6";
+    color: black;
+    display: inline-block;
+    margin-right: 6px;
+  }
+  
+  /* Rotate the caret/arrow icon when clicked on (using JavaScript) */
+  .caret-down::before {
+    transform: rotate(90deg);
+  }
+  
+  /* Hide the nested list */
+  .nested {
+    display: none;
+  }
+  
+  /* Show the nested list when the user clicks on the caret/arrow (with JavaScript) */
+  .active {
+    display: block;
+  }
+
+  .card {
+    
+    width: 350px;
+    height: 350px;
+    margin: 30px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    text-align:center;
+  }
+
+  .card img {
+      width: 350px;
+      height: 250px;
+      margin-left: 14px;
+  }
+
+
+/*================================================
+                    pagination
+=================================================*/
+
+  a {
+    text-decoration: none;
+    display: inline-block;
+    padding: 8px 16px;
+  }
+  
+  a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  .previous {
+    background-color: #f1f1f1;
+    color: black;
+  }
+  
+  .next {
+    background-color: #04AA6D;
+    color: white;
+  }
+  
+  .round {
+    border-radius: 50%;
+  }
+
+/*================================================
+                    Progress Bar
+=================================================*/
+  #myProgress {
+    width: 105%;
+    background-color:var(--grey);
+    text-align: center;
+    margin: 10px;
+  }
+  
+  #myBar {
+    width: 1%;
+    height: 20px;
+    background-color: green;
+  }
+
+
+  #progressbar {
+    margin-top: 20px;
+  }
+ 
+  .progress-label {
+    font-weight: bold;
+    text-shadow: 1px 1px 0 #fff;
+  }
+ 
+  .ui-dialog-titlebar-close {
+    display: none;
+  }

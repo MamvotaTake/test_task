@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/bootstrap.css">
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <!-- <link rel="stylesheet" href="/css/mdb.min.css"> -->
+    <link rel="stylesheet" href="/css/font-awesome/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@100;300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+
+</head>
+<body>
+    
+    <!-- Header -->
+    <header class="navbar-fixed-top">
+        <div class="container text-center">
+            <h1>Image Gallery</h1>
+            <p>Explore our gallery</p>
+        </div>
+    </header>
+    <!-- Header Ends -->
+    <div class="radio">
+        <div class="container">
+            <div class="content-box-lg">
+                <div class="form-check text-center">
+                    <h1>Choose View</h1>  
+                    <input type="radio" name="card" onclick=" checkButton()" id="card" value="card">Card View<br>   
+                    <input type="radio" name="card" onclick=" checkButton()" id="tree" value="tree">Tree View<br>    
+                    <hr class="text-muted" >
+                    
+                </div>
+                <br>
+                
+                <div class="row ">
+                    <div class="container">
+                        <div class="col-md-3">
+                            <input type="radio" name="sort" onclick=" sortByCategory()" id="category" value="card">Category<br>
+                        </div>
+                        <div class="col-md-3">
+                            <input type="radio" name="sort" onclick=" sortByDate()" id="date" value="card">Date<br>
+                        </div>
+                        <div class="col-md-3">
+                            <input type="radio" name="sort" onclick=" sortByFilename()" id="filename" value="card">Name<br>
+                        </div>
+                        <div class="col-md-3">
+                            <input type="radio" name="sort" onclick=" sortByFilesize()" id="filesize" value="card">File size<br>
+                        </div>
+                    </div>
+                    
+                </div>
+
+                <div class="row  text-center">
+                    <div class="container">
+                        <div class="w3-light-grey">
+                            <div id="myBar" class="w3-green" style="height:10px;width:0;margin-top:40px; border-radius: 3px;"></div>
+                        </div>
+                        <br>
+                        
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+
+    <div class="">
+        <div class="container text-center">
+            <button class="btn btn-success " onclick="resetFunction()">Reset</button>
+        </div>
+    </div>
+    
+
+    <div id="results">
+        <div id="dispCard"></div>
+    </div>
+
+    
+    <div class="content-box-lg">
+        <div class="container text-center">
+            <nav aria-label="Page navigation example">
+                <ul class="pagination pg-blue justify-content-center">
+                  <li class="page-item disabled">
+                    <a class="page-link" tabindex="-1">Previous</a>
+                  </li>
+                  <li class="page-item"><a class="page-link">1</a></li>
+                  <li class="page-item"><a class="page-link">2</a></li>
+                  <li class="page-item"><a class="page-link">3</a></li>
+                  <li class="page-item">
+                    <a class="page-link">Next</a>
+                  </li>
+                </ul>
+              </nav>
+        </div>
+    </div>
+    
+
+                      
+    <!-- Footer -->
+    <footer class="navbar-fixed-bottom">
+        <div class="content-box-lg">
+                <div class="container">
+                    <p>Copyright &copy; 2021 All Rights Reserved By developers.co</p>
+                </div>
+        </div>
+   </footer>
+   <!-- Footer End -->
+      
+  
+   
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+   <!-- <script src="js/mdb.min.js"></script> -->
+   <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+   <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/popper.js"></script>
+    <script src="js/index_1.js"></script>
+</body>
+</html>
